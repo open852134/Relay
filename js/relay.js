@@ -143,7 +143,7 @@ function slider(op){
 			          	map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);  /*地圖呈現的DIV設定*/
 			          	/* 新增座標 */    
 						
-						$.getJSON("./js/map.json", function(json) {
+						$.getJSON("js/map.json", function(json) {
 						    $.each(json.universities, function (key, data) {
 						    	setTimeout(function() {
 							        var latLng = new google.maps.LatLng(data.lat, data.lng);
